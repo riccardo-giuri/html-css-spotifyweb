@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -14,6 +15,7 @@ body {
 .top-page-content {
   flex-grow: 1;
   display: flex;
+  overflow: auto;
 }
 
 .bottom-page-content {
@@ -22,27 +24,203 @@ body {
 }
 
 .sidebar {
-  flex-basis: 200px;
-  background-color: orchid;
+  flex-basis: 230px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
 }
 
 .main {
   flex-grow: 1;
+  overflow: auto;
   display: flex;
   flex-direction: column;
 }
 
-.main .upgade-container {
-  flex-basis: 80px;
-  background-color: aqua;
-}
-
-.main nav {
-  flex-basis: 40px;
-  background-color: darkorange;
+.main .upgrade-container {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #080b12;
 }
 
 .main .main-info-container {
   flex-grow: 1;
-  background-color: firebrick;
+  background-color: #141922;
+  padding: 0rem 1.3rem;
+  overflow: auto;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  width: calc((100% - 5rem) / 6);
+  text-align: center;
+}
+
+.card-img-container img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.card-title {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0.6rem 0rem;
+}
+
+.card-subtitle {
+  font-size: 13px;
+  font-weight: bold;
+  color: #65686d;
+}
+
+h2 {
+  font-size: 1.9rem;
+  color: white;
+  padding-bottom: 1.4rem;
+}
+
+h4 {
+  font-size: 13px;
+  font-weight: bold;
+  color: #65686d;
+  padding-bottom: 1rem;
+}
+
+.img-round {
+  border-radius: 50%;
+}
+
+.main-nav {
+  background-color: #141922;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  gap: 1rem;
+}
+
+.main-nav ul li a {
+  color: #65686d;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.upgrade-container button {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  border: 2px solid white;
+  background-color: #080b12;
+  border-radius: 20px;
+  padding: 10px 30px;
+}
+
+.side-logo-container {
+  height: 50px;
+}
+
+.side-logo-container img {
+  height: 100%;
+}
+
+.side-nav ul li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: white;
+}
+
+.side-nav ul li img {
+  height: 25px;
+}
+
+.side-playlist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.playlist-title {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.create-playlist {
+  color: #65686d;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.create-playlist i {
+  font-size: 2rem;
+}
+
+.nav-playlist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.nav-playlist li {
+  font-size: 15px;
+  color: #65686d;
+}
+
+.side-bottom-info {
+  margin-top: auto;
+}
+
+.install-app, .profile {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.install-app svg {
+  height: 15px;
+  color: #65686d;
+}
+
+.install-app span {
+  font-size: 0.8rem;
+  color: #65686d;
+}
+
+.profile img {
+  height: 23px;
+  aspect-ratio: 1/1;
+  background-color: #65686d;
+  border-radius: 50%;
+}
+
+.profile span {
+  font-size: 0.9;
+  color: white;
+}
+
+.line {
+  width: 100%;
+  border-top: 1px solid #65686d;
 }
