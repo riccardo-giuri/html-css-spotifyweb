@@ -1,14 +1,96 @@
 @use 'breakpoints' as *;
+@use 'variables' as *;
+
 
 
 @include lg {
 
+    .sidebar{ display: flex;}
+    .sm-sidebar { display: none;}
+
+    $column-number: 4;
+
+    .cards-container .card{
+        $space-nogap: calc(100% - ($col-gap * ($column-number - 1)));
+        width: calc($space-nogap / $column-number);
+        text-align: center;
+    }
+
+    .song-volume-interactables {
+        gap: 0.5rem
+    }
+
+    .song-volume-interactables .slider-container {
+        width: 90px;
+    }
+
+    .song-container {
+        gap: 0.6rem;
+    }
+
+    .song-container .song-icons {
+        gap: 0.4rem;
+    }
+
+    .duration-info .slider-container {
+        width: 200px;
+    }
+
+    .song-volume-interactables .slider-container {
+        width: 80px;
+    }
 }
 
 @include md {
 
+    .sidebar{ display: flex;}
+    .sm-sidebar { display: none;}
+
+    $column-number: 2;
+
+    .cards-container .card{
+        $space-nogap: calc(100% - ($col-gap * ($column-number - 1)));
+        width: calc($space-nogap / $column-number);
+        text-align: center;
+    }
+
+    .duration-info .slider-container {
+        width: 150px;
+    }
+
+    .song-container .song-icons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
 
 @include sm {
 
+    .sidebar{ display: none;}
+    .sm-sidebar { display: flex;}
+
+    $column-number: 2;
+
+    .cards-container .card{
+        $space-nogap: calc(100% - ($col-gap * ($column-number - 1)));
+        width: calc($space-nogap / $column-number);
+        text-align: center;
+    }
+
+    .duration-info .slider-container {
+        width: 110px;
+    }
+
+    .song-volume-interactables .slider-container {
+        width: 65px;
+    }
+
+    .song-info {
+        width: 54px;
+    }
+
+    .song-container .song-icons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
