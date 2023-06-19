@@ -13,6 +13,21 @@
 
     <body>
         <div class="top-page-content">
+            <div class="sm-sidebar">
+                <div class="top-imgs">
+                    <img src="img/logo-small.svg" alt="">
+                    <img src="img/home.svg" alt="">
+                    <img src="img/search.svg" alt="">
+                    <img src="img/libreria.svg" alt="">
+                </div>
+                
+                <div class="bot-imgs">
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Download icon</title><path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z" fill="currentColor" fill-rule="evenodd"/></svg>
+                    <img src="img/profile.svg" alt="">
+                </div>
+            </div>
+
+            <!-- sidebar large -->
             <div class="sidebar">
                 <div class="side-logo-container">
                     <img src="img/logo.svg" alt="">
@@ -73,7 +88,10 @@
 
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="#">in evidenza</a></li>
+                        <li>
+                            <a href="#">in evidenza</a>
+                            <div class="underline"></div>
+                        </li>
                         <li><a href="#">podcast</a></li>
                         <li><a href="#">classifiche</a></li>
                         <li><a href="#">generi e mood</a></li>
@@ -226,7 +244,42 @@
         </div>
 
         <div class="bottom-page-content">
+            <div class="song-container">
+                <img src="img/sinister.jpeg" alt="">
+                <div class="song-info">
+                    <div class="song-title">Sinister</div>
+                    <div class="song-autor">Brano nome</div>
+                </div>
 
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </div>
+
+            <div class="song-player-container">
+                <div class="icons">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="duration-info">
+                    <span> 0:25 </span>
+                    <div class="slider-container">
+                        <div class="slider-bar"></div>
+                    </div>
+                    <span> 4:35 </span>
+                </div>
+            </div>
+
+            <div class="song-volume-interactables">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="slider-container">
+                    <div class="slider-bar"></div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
