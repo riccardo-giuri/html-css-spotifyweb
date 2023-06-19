@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-page-content {
+  flex-grow: 1;
+  display: flex;
+}
+
+.bottom-page-content {
+  flex-basis: 200px;
+  background-color: yellowgreen;
+}
+
+.sidebar {
+  flex-basis: 200px;
+  background-color: orchid;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .upgade-container {
+  flex-basis: 80px;
+  background-color: aqua;
+}
+
+.main nav {
+  flex-basis: 40px;
+  background-color: darkorange;
+}
+
+.main .main-info-container {
+  flex-grow: 1;
+  background-color: firebrick;
+}
